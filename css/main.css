@@ -29,13 +29,21 @@ h3{
     font-size: 125%;
 }
 
-a{
+a:link, a:visited {
     text-decoration: none;
     color: #0000AA;
 }
 
-a:hover, a:focus{
+a:hover, a:focus {
     color: #0000EE;
+}
+
+nav a:link, nav a:visited {
+    color: #55E;
+}
+
+nav a:hover, nav a:focus {
+    color: #00E;
 }
 
 main {
@@ -75,6 +83,7 @@ dd{
 }
 
 #menu {
+    margin: 0;
     padding: 1em;
     background-color: rgba(207,205,105,.5);
 }
@@ -83,8 +92,9 @@ dd{
     padding: 1em;
 }
 
-.container-fluid {
+main.container-fluid {
     margin: 0;
+    padding: 0;
 }
 
 .motto {
@@ -109,7 +119,17 @@ nav li {
         background-size: cover;
     }
 
-    main {
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    main.container-fluid {
         margin: 20px 20px 20px 30%;
     }
 
